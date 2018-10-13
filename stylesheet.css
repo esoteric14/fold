@@ -1,0 +1,221 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fdf4f4;
+    background-image: url(images/bg2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+ul{
+    list-style:none;
+}
+section.top-box{
+    height:auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    margin: 0 auto;
+   box-shadow: 0px 0px 2.5px 0px #c7a6a6;
+}
+.background{
+    position:relative;
+    z-index: -1;
+    height: 350px;
+    width:auto;
+    margin: 0 auto;
+    background: #fdfdde;
+    box-shadow: 0px 0px 5px 0px #f3638b;
+}
+div.background img.slide{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border-radius: inherit;
+}
+.profile-holder{
+    width: 200px;
+    height: 180px;
+    border-radius: 65%;
+    border: 3px solid whitesmoke;
+	position:relative;
+    top:10%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 14px 1px #292626;
+    
+} 
+.skew{
+     position:relative;
+     background:#ffffbb;
+	 }
+.skew:after{
+     position:absolute;
+	 width:100%;
+	 height:100%;
+	 z-index:-1;
+	 content:'';
+	 background:inherit;
+	 top:0;
+	 right:0;
+	 left:0;
+	 bottom:0;
+	 transform-origin:top right;
+	 transform: skewY(5deg);
+	 }
+
+
+
+.break{
+    background-color:transparent;
+    height: 100px;
+}
+
+@media only screen and (max-width: 500px)
+{
+  section.top-box{
+      width:80%
+    }
+    .background{
+        width:auto;
+        height:260px;
+    }
+  .profile-holder{
+	width: 140px;
+    height: 145px;
+	}
+    div.col{
+    margin-top:5%;
+    }
+    
+    div.row.icon-holder.skew{
+        width:auto;
+        height:140px;
+    }
+
+}
+.a{
+    margin-top: 15%;
+    margin-bottom: 10%;
+    }
+
+ul.fly-in{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin-top: 2%;
+}
+ul.fly-in li{
+   display: inline-block;
+    color: #f71b57;;
+    font-size: 2.5em;
+    font-weight: 600;
+    opacity: 1;
+    transition: all 2.5s ease;
+}
+@media only screen and (max-width: 500px)
+{
+ul.fly-in{
+    left:44%
+    }
+    
+ ul.fly-in li{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 60%;
+}
+ul.fly-in li:last-child{
+    margin-right: 0;
+}
+}
+
+ul.fly-in.move li{
+    opacity:0;
+}
+    
+ul.fly-in.move li:nth-child(1){transform: translateX(-106px) translateY(-100px);}
+ul.fly-in.move li:nth-child(2){transform: translateX(75px) translateY(100px);}
+ul.fly-in.move li:nth-child(3){transform: translateX(-200px) translateY(-200px);}
+ul.fly-in.move li:nth-child(4){transform: translateX(-40px) translateY(-70px);}
+ul.fly-in.move li:nth-child(5){transform: translateX(210px) translateY(-80px);}
+ul.fly-in.move li:nth-child(6){transform: translateX(-255px) translateY(0px);}
+ul.fly-in.move li:nth-child(7){transform: translateX(-167px) translateY(70px);}
+ul.fly-in.move li:nth-child(8){transform: translateX(-45px) translateY(-15px);}
+ul.fly-in.move li:nth-child(9){transform: translateX(80px) translateY(33px);}
+    
+div.icon-holder{
+    height: 170px;
+    width: auto;
+    margin: 0 auto;
+    background: linear-gradient(to right, #b70233 , #f71112);
+    
+ }
+div.name{
+    border-bottom: 1px solid #ea6aa6;
+}
+    
+.name h1{
+    font-size: 2.5em;
+    margin-left: 25%;
+    color: #ffffad;
+}
+
+ul.social{
+    list-style: none;
+    text-align: center;
+}
+ul.social li{
+    margin-left: -7%;
+    padding:7%;
+    display: inline-block;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px!important;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+}
+.fa:hover {
+    opacity: 0.7;
+    transform: scale(1,1.1);
+    transition: .5s;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.fa-github{
+    background: black;
+    color: white;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .name h1{
+        font-size: 150%;
+    }
+    .a{
+        margin-top: 10%;
+    }
+}
+.last{
+    height:100px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ayesha</title>
+    <link rel="icon" href="images/i.ico" type="image/gif" sizes="36x36">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+    <body>
+        <section class="break">
+        </section>
+        <section class="top-box">
+            <div class="row background">
+             <div class="profile-holder">
+                <img class="slide" src="images/3.jpg" alt="" />
+                <img class="slide" src="images/1.jpg" alt="" />
+                <img class="slide" src="images/3.jpg" alt="" />
+                <img class="slide" src="images/8.jpg" alt="" />
+                
+	           
+                <script>
+		
+                    var index=1;
+
+                    autoSlide();
+
+                    function autoSlide(){
+                        var i;
+                        var x= document.getElementsByClassName("slide");
+                         console.log(x);
+                        for(i=0; i<x.length; i++)
+                        {
+                            x[i].style.display="none";
+                        }
+                        if(index>x.length)
+                          {index=1;}
+                          x[index-1].style.display="block";
+                         index++;
+                         setTimeout(autoSlide,6000);
+				  }
+		       </script>
+                 
+            </div>
+            
+            <div class="row a">
+                <ul class="fly-in move">
+                    <li>H</li>
+                    <li>i</li>
+                    <li>&nbsp</li>
+                    <li>t</li>
+                    <li>h</li>
+                    <li>e</li>
+                    <li>r</li>
+                    <li>e</li>
+                    <li>!</li>
+                </ul>
+                <script>
+                    $(function(){
+                        setTimeout(function(){
+                        $('.fly-in').removeClass('move');},500);
+                    })();
+                    
+                </script>
+            </div>
+            </div>
+            <div class="row icon-holder skew">
+                <div class="name">
+                    <h1>I am Ayesha Ayub</h1>
+                </div>
+                <div class="social">
+                    <ul class="social">
+                             <li>
+                                 <a href="https://www.facebook.com/ayesha.ayub.313" class="fa fa-facebook"></a>
+                             </li>
+                             <li>
+                                 <a href="https://www.linkedin.com/in/ayesha-ayub-01152313b/" class="fa fa-linkedin"></a>
+                             </li>
+                             <li>
+                                 <a href="mailto:ayubayesha07@gmail.com" class="fa fa-google"></a>
+                             </li>
+							  <li>
+                                 <a href="https://github.com/esoteric14" class="fa fa-github"></a>
+                             </li>
+                            
+                        </ul>
+                </div>
+                
+                
+            </div>
+            </section>
+        <div class="last">
+            </div>
+    </body>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Authentication with Popup</title>
+  <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCelBeosimuQJDCpk-ZMIIWPzeM3iSkjXw",
+        authDomain: "fluid-unfolding-209306.firebaseapp.com",
+        databaseURL: "https://fluid-unfolding-209306.firebaseio.com",
+        projectId: "fluid-unfolding-209306",
+        storageBucket: "fluid-unfolding-209306.appspot.com",
+        messagingSenderId: "874097630563"
+    };
+  firebase.initializeApp(config);
+      signIn=()=>{
+          base_provider = new firebase.auth.GoogleAuthProvider()
+          firebase.auth().signInWithPopup(base_provider).then(function(result){
+               console.log(result)
+               console.log("success.google aacount linked")}).catch(function(err){
+              console.log(err)
+              console.log("failed")
+          })
+      }
+  </script>
+</head>
+    <body>
+        <button onclick="signIn()">sign in</button>
+    </body>
+</html>

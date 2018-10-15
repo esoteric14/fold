@@ -7,6 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ayesha</title>
     <link rel="icon" href="images/i.ico" type="image/gif" sizes="36x36">
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script>
+ // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCelBeosimuQJDCpk-ZMIIWPzeM3iSkjXw",
+    authDomain: "fluid-unfolding-209306.firebaseapp.com",
+    databaseURL: "https://fluid-unfolding-209306.firebaseio.com",
+    projectId: "fluid-unfolding-209306",
+    storageBucket: "fluid-unfolding-209306.appspot.com",
+    messagingSenderId: "874097630563"
+  };
+  firebase.initializeApp(config);
+    
+   firebase.initializeApp(config);
+      signIn=()=>{
+          base_provider = new firebase.auth.GoogleAuthProvider()
+          firebase.auth().signInWithPopup(base_provider).then(function(result){
+               console.log(result)
+               console.log("success.google aacount linked")}).catch(function(err){
+              console.log(err)
+              console.log("failed")
+          })
+      }
+   </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
 
@@ -14,6 +38,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
 
 </head>
     <body>
@@ -80,16 +106,16 @@
                 <div class="social">
                     <ul class="social">
                              <li>
-                                 <a href="https://www.facebook.com/ayesha.ayub.313" class="fa fa-facebook"  target="_blank"></a>
+                                 <a href="https://www.facebook.com/ayesha.ayub.313" class="fa fa-facebook"></a>
                              </li>
                              <li>
-                                 <a href="https://www.linkedin.com/in/ayesha-ayub-01152313b/" class="fa fa-linkedin"  target="_blank"></a>
+                                 <a href="https://www.linkedin.com/in/ayesha-ayub-01152313b/" class="fa fa-linkedin"></a>
                              </li>
                              <li>
                                  <a href="mailto:ayubayesha07@gmail.com" class="fa fa-google"></a>
                              </li>
 							  <li>
-                                 <a href="https://github.com/esoteric14" class="fa fa-github" target="_blank"></a>
+                                 <a href="https://github.com/esoteric14" class="fa fa-github"></a>
                              </li>
                             
                         </ul>
@@ -98,6 +124,8 @@
                 
             </div>
             </section>
+        <div class = "auth"><button onclick="signIn()">sign in</button></div>
+
         <div class="last">
             </div>
     </body>

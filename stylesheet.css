@@ -219,3 +219,9 @@ ul.social li{
 .last{
     height:100px;
 }
+.auth{
+    position: fixed;
+    top: 25px;
+    left: 30px;
+   
+}
